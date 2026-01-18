@@ -11,7 +11,7 @@ export type Project = {
   long_description: string | null;
   status: "live" | "in_progress" | "archived";
   technologies: string[];
-  github_url: string | null;
+  repo_url: string | null;
   live_url: string | null;
   image_url: string | null;
   featured: boolean;

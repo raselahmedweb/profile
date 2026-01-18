@@ -1,7 +1,7 @@
-import { CONTACT_INFO } from "@/lib/db"
+import { CONTACT_INFO } from "@/lib/db";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="border-t border-border py-8">
@@ -19,5 +19,5 @@ export function Footer() {
         </p>
       </div>
     </footer>
-  )
+  );
 }

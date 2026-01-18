@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export function HeroTerminal() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="w-full max-w-4xl gradient-border rounded-lg p-8 sm:p-12 glow-border">
+    <section className="flex mt-10 justify-center px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-4xl gradient-border rounded-lg p-4 sm:p-12 glow-border">
         <div className="space-y-4 text-sm sm:text-base">
           <p className="text-muted-foreground">
             $ system_archivist --initialize --operator=Rasel Ahmed
@@ -14,7 +14,7 @@ export function HeroTerminal() {
             <p>
               <span className="text-blue-400">[ROLE]</span>{" "}
               <span className="text-white font-medium">
-                Senior Full-Stack Engineer & API Architect
+                Full-Stack Developer & API Architect
               </span>
             </p>
             <p>

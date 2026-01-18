@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Footer } from "@/components/footer";
 import { Download } from "lucide-react";
+import { DownloadResume } from "@/components/helper/download";
 
 export const metadata = {
   title: "Resume — Rasel Ahmed",
@@ -65,7 +66,10 @@ export default function ResumePage() {
               Professional experience
             </p>
           </div>
-          <button className="inline-flex items-center gap-2 px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded transition-all duration-200 text-sm font-medium glow-border">
+          <button
+            onClick={DownloadResume}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded transition-all duration-200 text-sm font-medium glow-border"
+          >
             <Download className="w-4 h-4" />
             Download PDF
           </button>
@@ -103,7 +107,7 @@ export default function ResumePage() {
           </div>
         </div>
 
-        <div className="gradient-border rounded-lg p-8 glow-border mb-12">
+        {/* <div className="gradient-border rounded-lg p-8 glow-border mb-12">
           <h2 className="text-green-400 font-semibold mb-6 text-sm uppercase tracking-wider">
             Education
           </h2>
@@ -138,7 +142,7 @@ export default function ResumePage() {
               <p className="text-muted-foreground text-sm">CNCF · 2022</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </main>
